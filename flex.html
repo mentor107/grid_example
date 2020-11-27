@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .flex{
+          margin: 0 auto;
+          display: flex;
+          flex-flow: column wrap;
+          height: 1960px;
+          width: calc(80% - 30px);
+      }
+      .flex img{
+        margin-right: 30px;
+      }
+      .flex img:not(:nth-child(4n)){
+          margin-bottom: 30px;
+      }
+
+      .flex img:nth-child(9), .flex img:nth-child(10), .flex img:nth-child(11), .flex img:nth-child(12){
+          margin-right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="grid">
+        <img src="img/Rectangle1.png" alt="">
+        <img src="img/Rectangle2.png" alt="">
+        <img src="img/Rectangle3.png" alt="">
+        <img src="img/Rectangle4.png" alt="">
+        <img src="img/Rectangle5.png" alt="">
+        <img src="img/Rectangle6.png" alt="">
+        <img src="img/Rectangle7.png" alt="">
+        <img src="img/Rectangle8.png" alt="">
+        <img src="img/Rectangle9.png" alt="">
+        <img src="img/Rectangle10.png" alt="">
+        <img src="img/Rectangle11.png" alt="">
+        <img src="img/Rectangle12.png" alt=""> 
+    </section>
+  </body>
+</html>
